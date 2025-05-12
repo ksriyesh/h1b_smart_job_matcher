@@ -1,0 +1,31 @@
+web_lookup_task:
+  description: >
+    You are given two input variables:
+      - role: the job role to search for
+      - company: the company to search jobs at
+
+    Use these to search "<company> <role> jobs" or visit the company’s careers page.
+
+    For each matching job, extract:
+      - title: the name of the job
+      - url: a direct link to the job posting
+      - description: full job description text
+
+    If no jobs are found, still return the company with an empty list.
+
+  expected_output: >
+    {
+      "results": [
+        {
+          "company_name": "<string>",
+          "career_page_url": "<string|null>",
+          "job_listings": [
+            {
+              "title": "<string>",
+              "url": "<string>",
+              "description": "<string>"
+            }
+          ]
+        }
+      ]
+    }

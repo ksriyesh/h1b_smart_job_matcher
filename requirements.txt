@@ -1,0 +1,35 @@
+# Core Spark and Web
+pyspark==3.5.1
+streamlit>=1.31
+
+# CrewAI Framework
+crewai>=0.22.3
+crewai-tools>=0.2.0
+
+# Resume parsing
+docx2txt
+PyPDF2
+
+# NLP and similarity
+numpy
+scikit-learn
+
+# Env handling
+python-dotenv
+
+# File watching
+watchdog
+
+# Web requests
+requests
+
+# YAML config loading
+pyyaml
+
+# For structured model output from CrewAI
+pydantic
+
+# Optional: if using distutils fallback
+setuptools  # distutils has been deprecated in Python 3.12+
+
+# Do NOT use distutils directly — install setuptools instead.
